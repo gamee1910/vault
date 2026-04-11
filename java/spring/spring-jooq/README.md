@@ -4,12 +4,12 @@ Spring Boot module that exposes a small CRUD API for `goods` using jOOQ for SQL 
 
 ## What this module includes
 
-- Spring Boot application entry point: `src/main/java/com/vault/jooq/Application.java`
-- REST controller: `src/main/java/com/vault/jooq/controller/GoodsController.java`
-- Service with jOOQ queries: `src/main/java/com/vault/jooq/service/GoodsService.java`
-- DTO record: `src/main/java/com/vault/jooq/dto/GoodsDTO.java`
-- Liquibase changelog: `src/main/resources/db/changelog.yml`
-- Initial schema migration: `src/main/resources/db/migrations/ddl/init_schema.yml`
+- Spring Boot application entry point: `src/expression/java/com/vault/jooq/Application.java`
+- REST controller: `src/expression/java/com/vault/jooq/controller/GoodsController.java`
+- Service with jOOQ queries: `src/expression/java/com/vault/jooq/service/GoodsService.java`
+- DTO record: `src/expression/java/com/vault/jooq/dto/GoodsDTO.java`
+- Liquibase changelog: `src/expression/resources/db/changelog.yml`
+- Initial schema migration: `src/expression/resources/db/migrations/ddl/init_schema.yml`
 
 ## Tech stack
 
@@ -32,7 +32,7 @@ Columns:
 - `sold_count` (`integer`)
 - `deleted` (`boolean`)
 
-Defined in: `src/main/resources/db/migrations/ddl/init_schema.yml`
+Defined in: `src/expression/resources/db/migrations/ddl/init_schema.yml`
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Defined in: `src/main/resources/db/migrations/ddl/init_schema.yml`
 
 ## Configuration
 
-Application config is in `src/main/resources/application.yml`:
+Application config is in `src/expression/resources/application.yml`:
 
 - `spring.datasource.url=jdbc:postgresql://localhost:5432/goods_db`
 - `spring.datasource.username=postgres`
@@ -131,6 +131,6 @@ When the app is running, Swagger UI is typically available at:
 ## Troubleshooting
 
 - If startup fails with database connection errors, verify PostgreSQL is running and `goods_db` exists.
-- If schema errors appear, check Liquibase files in `src/main/resources/db/changelog.yml` and `src/main/resources/db/migrations/ddl`.
+- If schema errors appear, check Liquibase files in `src/expression/resources/db/changelog.yml` and `src/expression/resources/db/migrations/ddl`.
 - If jOOQ classes are missing, run `./mvnw jooq-codegen:generate` and rebuild.
 
