@@ -1,0 +1,10 @@
+{
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "java.jdt.ls.enabled": false
+}

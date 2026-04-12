@@ -1,0 +1,13 @@
+{
+  "folders": [
+    { "name": "C++", "path": "./cpp" },
+    { "name": "Java", "path": "./java" },
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "**/target": true,
+      "**/*.class": true,
+    },
+  },
+}
