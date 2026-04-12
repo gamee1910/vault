@@ -35,6 +35,7 @@ replay_pid*
 
 # BlueJ files
 *.ctxt
+cmake-build-debug
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
