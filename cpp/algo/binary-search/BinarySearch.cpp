@@ -1,16 +1,15 @@
 #include<iostream>
 #include<vector>
 
-int BinarySearch(std::vector<int> &vec, int n) {
-  int start = 0;
-  int end = vec.size() - 1;
+int BinarySearch(std::vector<int> &nums, int target) {
+  int start = 0, end = nums.size() - 1;
 
   while (start <= end) {
     const int mid = start + (end - start) / 2;
 
-    if (vec[mid] == n)
+    if (nums[mid] == target)
       return mid;
-    if (vec[mid] < n)
+    if (nums[mid] < target)
       start = mid + 1;
     else
       end = mid - 1;
@@ -20,19 +19,19 @@ int BinarySearch(std::vector<int> &vec, int n) {
 }
 
 int main() {
-  int n, index;
-  std::vector<int> vec = {3, 5, 7, 11, 12, 16, 17, 52, 64, 101};
+  int target;
+  std::vector nums = {3, 5, 7, 11, 12, 16, 17, 52, 64, 101};
 
   std::cout << "Array elements :";
-  for (const int &i: vec) {
+  for (const int &i: nums) {
     std::cout << i << " ";
   }
   std::cout << std::endl;
 
   std::cout << "Element to search : ";
-  std::cin >> n;
+  std::cin >> target;
 
-  if ((index = BinarySearch(vec, n)) != -1)
+  if (int index; (index = BinarySearch(nums, target)) != -1)
     std::cout << "Element found at index : " << index << std::endl;
   else
     std::cout << "Element not found. " << std::endl;
