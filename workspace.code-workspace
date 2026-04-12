@@ -1,7 +1,13 @@
 {
   "folders": [
-    { "name": "C++", "path": "./cpp" },
-    { "name": "Java", "path": "./java" },
+    {
+      "name": "C++",
+      "path": "./cpp"
+    },
+    {
+      "name": "Java",
+      "path": "./java"
+    },
   ],
   "settings": {
     "editor.formatOnSave": true,
@@ -9,5 +15,6 @@
       "**/target": true,
       "**/*.class": true,
     },
+    "java.compile.nullAnalysis.mode": "automatic",
   },
 }
