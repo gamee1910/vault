@@ -7,27 +7,12 @@ This directory contains algorithm implementations and LeetCode problem solutions
 ### `/algo`
 Contains basic algorithm implementations in C++:
 
-- **`binary-search/`**
-  - `BinarySearch.cpp` - Binary search algorithm implementation
-  - Searches for an element in a sorted array with O(log n) time complexity
-
-- **`stack/`**
-  - `Expression.cpp` - Stack application for evaluating mathematical expressions
-  - Supports conversion and evaluation of infix/postfix expressions
-
 ### `/leetcode`
 Contains solutions to LeetCode problems:
-
-- **`1679/`**
-  - `MaxNumberOfKSumPair.cpp` - Solution to "Max Number of K-Sum Pairs" problem
-  
-- **`189/`**
-  - `RotateArray.cpp` - Solution to "Rotate Array" problem
 
 ### Configuration Files
 
 - **`CMakeLists.txt`** - CMake configuration file for building the project
-- **`cmake-build-debug/`** - Build directory (auto-generated)
 
 ## Technologies
 
