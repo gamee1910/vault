@@ -33,3 +33,9 @@ add_gtest(
         leetcode/2544/AlternateDigitSumTest.cpp
         leetcode/2544/AlternateDigitSum.cpp
 )
+
+add_gtest(
+    ValidAnagram
+    leetcode/242/ValidAnagramTest.cpp
+    leetcode/242/ValidAnagram.cpp
+)

@@ -2,9 +2,13 @@
 # Compiled class file
 *.class
 
+cmake-build-debug
+build
 # Log file
+cmake-build-debug
+build
 *.log
-
+.cache
 # BlueJ files
 *.ctxt
 
