@@ -1,0 +1,10 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.kafka.autoconfigure.KafkaAutoConfiguration
+  cloud:
+    function:
+      definition: approvalRequests
+    stream:
+      bindings:
+        approvalRequests-out-0:
+          destination: approvalRequests-out-0
